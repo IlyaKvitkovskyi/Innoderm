@@ -555,5 +555,65 @@ ul.socials__list {
   z-index: 999;
   position: absolute;
   top: 28%;
-  right: -50px;
+  left: 40%;
+}
+
+.directions__line-second {
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.directions__btn {
+  min-width: 240px;
+}
+
+.appointment {
+  margin-top: 120px;
+}
+
+.appointment__inner {
+  display: flex;
+}
+
+.appointment__info {
+  background-color: #3a3a3a;
+  margin-right: 69px;
+  min-width: 580px;
+}
+
+.appointment__info-wrap {
+  min-height: 100%;
+}
+
+.appointment__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.appointment__text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #d3d3d3;
+}
+
+.appointment__select {
+  outline: none;
+  width: 448px;
+  height: 58px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3a3a3a;
+}
+
+.appointment__option {
+  width: 448px;
+  height: 80px !important;
+  padding: 20px;
 }
