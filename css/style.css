@@ -581,7 +581,7 @@ ul.socials__list {
 }
 
 .appointment__info-wrap {
-  padding-left: 100px;
+  padding-left: 180px;
   padding-top: 100px;
   min-height: 100%;
   background-color: #3a3a3a;
@@ -595,6 +595,7 @@ ul.socials__list {
   line-height: 62px;
   color: #ffffff;
   margin-bottom: 35px;
+  max-width: 580px;
 }
 
 .appointment__text {
@@ -608,6 +609,7 @@ ul.socials__list {
 }
 
 .appointment__content {
+  background-image: url('../img/appointment.jpg');
   min-width: 50%;
 }
 
@@ -638,13 +640,18 @@ ul.socials__list {
   height: 58px;
   margin-bottom: 132px;
   text-transform: uppercase;
-  background: #262729;
+  background-color: #262729;
   border: 1px solid rgba(255, 171, 135, 0.47);
   color: #fff;
   font-family: 'Inter';
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
+  transition: all 0.3s ease;
+}
+
+.appointment__btn:hover {
+  background-color: #000;
 }
 
 input::-webkit-input-placeholder {
@@ -718,5 +725,28 @@ input::-webkit-input-placeholder {
 }
 
 .promotions {
+  margin-top: 120px;
+}
+
+.promotions__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 79px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.promotions__text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a3a3a;
+  max-width: 350px;
+  margin-bottom: 26px;
+}
+
+.seo {
   margin-top: 120px;
 }
