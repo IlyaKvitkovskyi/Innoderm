@@ -1,52 +1,53 @@
-$(function () {
-  //for slick slider
-  $('.slider').slick({
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    dots: true,
-    // centerMode: true,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
+// $(function () {
+//   //for slick slider
+//   $('.slider').slick({
+//     slidesToShow: 1,
+//     // slidesToScroll: 1,
+//     dots: true,
+//     // centerMode: true,
 
-  // On swipe event
-  $('.slider').on('swipe', function (event, slick, direction) {
-    if (direction === 'left') {
-      $('.slick-dots').removeClass('right-transition');
-      $('.slick-dots').addClass('left-transition');
-    } else {
-      $('.slick-dots').removeClass('left-transition');
-      $('.slick-dots').addClass('right-transition');
-    }
-    var newIndex = $('.slider .slick-slide.slick-current.slick-active').attr('data-slick-index');
-    $('.slider .slick-dots').removeClass(function (index, css) {
-      return (css.match(/\bnavDotIndex-\S+/g) || []).join(' '); // removes anything that starts with "navDotIndex-"
-    });
-    $('.slider .slick-dots').addClass('navDotIndex-' + newIndex);
-  });
+//     fade: true,
+//     // autoplay: true,
+//     // autoplaySpeed: 2000,
+//     // appendDots: $('.numbers'),
+//   });
 
-  $('.slider .slick-dots').append("<li class='animated-dot'><li>");
-  $('.slider .slick-dots .animated-dot').next('li').remove();
+// On swipe event
+// $('.slider').on('swipe', function (event, slick, direction) {
+//   if (direction === 'left') {
+//     $('.slick-dots').removeClass('right-transition');
+//     $('.slick-dots').addClass('left-transition');
+//   } else {
+//     $('.slick-dots').removeClass('left-transition');
+//     $('.slick-dots').addClass('right-transition');
+//   }
+//   var newIndex = $('.slider .slick-slide.slick-current.slick-active').attr('data-slick-index');
+//   $('.slider .slick-dots').removeClass(function (index, css) {
+//     return (css.match(/\bnavDotIndex-\S+/g) || []).join(' '); // removes anything that starts with "navDotIndex-"
+//   });
+//   $('.slider .slick-dots').addClass('navDotIndex-' + newIndex);
+// });
 
-  $('.slick-dots li button').click(function (e) {
-    e.stopPropagation();
-  });
+// $('.slider .slick-dots').append("<li class='animated-dot'><li>");
+// $('.slider .slick-dots .animated-dot').next('li').remove();
 
-  // for other navigation item
-  $('li').click(function () {
-    $('li').removeClass('active');
-    $(this).toggleClass('active');
-  });
+// $('.slick-dots li button').click(function (e) {
+//   e.stopPropagation();
+// });
 
-  // for services accordion
-  $('[data-collapse]').on('click', function (event) {
-    event.preventDefault();
+//   // for other navigation item
+//   $('li').click(function () {
+//     $('li').removeClass('active');
+//     $(this).toggleClass('active');
+//   });
 
-    var $this = $(this),
-      blockId = $this.data('collapse');
+//   // for services accordion
+//   $('[data-collapse]').on('click', function (event) {
+//     event.preventDefault();
 
-    $this.toggleClass('active');
-  });
-});
+//     var $this = $(this),
+//       blockId = $this.data('collapse');
+
+//     $this.toggleClass('active');
+//   });
+// });
