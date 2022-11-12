@@ -86,6 +86,10 @@ $('.prom-slider').slick({
 $('.about-slide').slick({
   // autoplay: true,
   // autoplaySpeed: 2000,
+  customPaging: function (slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<button></button>';
+  },
   slidesToShow: 1,
   initialSlide: 0,
   infinite: true,

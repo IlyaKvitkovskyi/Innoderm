@@ -1023,4 +1023,34 @@ ul.header__menu-list {
 
 .about__slider {
   width: 50%;
+  position: relative;
+}
+
+.about-dot {
+  position: absolute;
+  bottom: 24px;
+  left: 45%;
+}
+
+.about-dot .slick-dots li:after {
+  width: 0;
+  margin-left: 0;
+}
+
+.about-dot .slick-dots li:before {
+  width: 0;
+  margin: 0;
+}
+.about-dot .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.about-dot .slick-dots li.slick-active button {
+  background: #ffab87;
 }
