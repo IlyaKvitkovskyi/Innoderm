@@ -69,5 +69,27 @@ $('.slider').slick({
   //       slidesToScroll: 2,
   //     },
   //   },
-  // ],
+  // ],prom-slider
+});
+
+$('.prom-slider').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 3,
+  initialSlide: 0,
+  infinite: true,
+  dots: false,
+  arrows: false,
+  appendDots: $('.dotted'),
+});
+
+$('.about-slide').slick({
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  slidesToShow: 1,
+  initialSlide: 0,
+  infinite: true,
+  dots: true,
+  arrows: false,
+  appendDots: $('.about-dot'),
 });

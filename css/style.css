@@ -1012,3 +1012,15 @@ ul.header__menu-list {
   display: flex;
   flex-direction: column;
 }
+
+.promotions {
+  display: flex;
+}
+
+.promotions__items {
+  width: 100%;
+}
+
+.about__slider {
+  width: 50%;
+}
