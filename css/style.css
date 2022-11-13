@@ -1017,6 +1017,10 @@ ul.header__menu-list {
   display: flex;
 }
 
+.promotions .container-xs {
+  display: flex;
+}
+
 .promotions__items {
   width: 100%;
 }
@@ -1029,7 +1033,7 @@ ul.header__menu-list {
 .about-dot {
   position: absolute;
   bottom: 24px;
-  left: 45%;
+  left: 43%;
 }
 
 .about-dot .slick-dots li:after {
