@@ -1,3 +1,273 @@
 .intro {
   max-height: 700px;
 }
+
+ul.breadcrumbs {
+  display: flex;
+}
+
+ul.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+ul.breadcrumbs li svg {
+  display: none;
+}
+
+ul.breadcrumbs li svg path {
+  fill: #fff;
+}
+
+ul.breadcrumbs li a {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ul.breadcrumbs li:not(:last-of-type) svg {
+  display: block;
+}
+
+ul.breadcrumbs li:last-of-type a {
+  text-decoration: none;
+}
+
+.about-services .container {
+  padding-left: 0;
+}
+
+.about-services__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-services__right,
+.about-services__left,
+.usage__right,
+.usage__left {
+  width: 50%;
+}
+
+.about-services__right {
+  margin-left: 70px;
+  width: 670px;
+}
+
+.about-services__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.about-services__text {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4d4d4d;
+  margin-bottom: 25px;
+}
+
+.usage {
+  background: #fffdfa;
+  margin-bottom: 100px;
+}
+
+.usage .container {
+  padding: 0;
+}
+
+.usage__inner {
+  display: flex;
+}
+
+.usage__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.usage__left .title {
+  margin-bottom: 25px;
+}
+
+ul.usage__list {
+  padding-left: 25px;
+  list-style: disc;
+  margin-bottom: 32px;
+}
+
+ul.usage__list li {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: #4d4d4d;
+}
+
+.about__btn {
+  width: 230px;
+}
+
+.info {
+  margin-bottom: 150px;
+}
+
+.info__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.info__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.info__left,
+.info__right {
+  padding: 35px;
+  padding-top: 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 29px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.info__left {
+  margin-right: 50px;
+}
+
+.info__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: #3565e0;
+  margin-left: 50px;
+}
+
+.info__right-title {
+  color: #fb274d;
+  margin-left: 40px;
+}
+
+.info__item {
+  font-family: 'Montsserat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+}
+
+.price {
+  padding-top: 57px;
+  padding-bottom: 87px;
+  background: #fffdfa;
+}
+
+.price .title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.price .container-xs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-table {
+  margin: 25px 0;
+  margin-bottom: 45px;
+  font-size: 0.9em;
+  min-width: 400px;
+  overflow: hidden;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 27px;
+}
+
+.content-table thead tr {
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 35px 45px;
+  text-align: center;
+}
+
+.last-col {
+  border-right: none;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.content-table .td-title {
+  text-align: left;
+}
+
+.content-table td {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.content-table th {
+  font-family: 'Montsserat';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.price-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.price-btn {
+  cursor: pointer;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #000;
+  margin-left: 32px;
+  width: 300px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.price-btn:hover {
+  background-color: #3a3a3a;
+  color: #fff;
+}

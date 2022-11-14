@@ -221,7 +221,6 @@ ul.header__menu-list {
 }
 
 .footer {
-  margin-top: 70px;
   height: 212px;
   background-color: #2f2f2f;
   display: flex;
@@ -512,6 +511,9 @@ input::-webkit-input-placeholder {
 
 .seo {
   margin-top: 120px;
+  padding-top: 120px;
+  background-color: #fafafa;
+  padding-bottom: 70px;
 }
 
 .seo__title {
