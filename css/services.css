@@ -43,7 +43,6 @@ ul.breadcrumbs li:last-of-type a {
 
 .about-services__inner {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -113,6 +112,11 @@ ul.usage__list li {
   font-size: 24px;
   line-height: 43px;
   color: #4d4d4d;
+}
+
+.usage__right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about__btn {
@@ -349,4 +353,208 @@ ul.usage__list li {
   border-left: 21px solid #fff;
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
+}
+
+.treatment {
+  background: #fffdfa;
+}
+
+.treatment__right {
+  display: flex;
+  justify-content: end;
+}
+
+.treatment__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+  margin-bottom: 25px;
+  max-width: 600px;
+}
+
+.treatment__item {
+  display: flex;
+}
+
+.treatment__item--second {
+  flex-direction: row-reverse;
+}
+
+.treatment__right--second {
+  justify-content: start;
+}
+
+.treatment__left p {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 43px;
+  color: #4d4d4d;
+}
+
+.appointment {
+  margin-top: 0;
+}
+
+.contacts__inner {
+  height: 900px;
+  display: flex;
+
+  background-size: cover;
+}
+
+.contacts__left {
+  width: 30%;
+  background: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  padding: 115px 0 0 50px;
+}
+
+.contacts__right {
+  background-image: url('../img/map.png');
+  width: 70%;
+  position: relative;
+}
+
+.contacts__right:before {
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(#000)
+  );
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #2d2d2d 100%);
+}
+
+.contacts__right img {
+  height: 100%;
+}
+
+.contacts__title {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 62px;
+  color: #ffffff;
+  margin-bottom: 52px;
+}
+
+.contacts__title-xs {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+.contacts__dep,
+.contacts__works,
+.contacts__socials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contacts__dep a {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+}
+
+.contacts__phone {
+  margin-bottom: 15px;
+}
+
+.contacts__phone::before {
+  content: url('../img/phone.svg');
+  margin-right: 10px;
+}
+
+.contacts__mail::before {
+  content: url('../img/mail.svg');
+  margin-right: 10px;
+}
+
+.contacts__works-title,
+.contacts__works-time {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts__works-title {
+  color: #707070;
+}
+
+.contacts__works-time {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contacts__socials-imgs {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__socials-imgs a {
+  margin-right: 30px;
+}
+
+.contacts__address-block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 30px 94px 30px 30px;
+  background: rgba(149, 149, 149, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.contacts__address-title {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ffab87;
+  margin-bottom: 15px;
+}
+
+.contacts__address-subtitle {
+  font-family: 'Montsserat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.contacts__address {
+  margin-bottom: 56px;
+}
+
+.contacts__address,
+.contacts__address-link {
+  font-family: 'Montsserat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
 }

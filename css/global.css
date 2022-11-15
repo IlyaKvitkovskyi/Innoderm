@@ -58,6 +58,11 @@ a {
   overflow: hidden;
 }
 
+.page.blur {
+  filter: blur(10px);
+  position: fixed;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -327,7 +332,6 @@ ul.footer__list {
 }
 
 .appointment__content {
-  background-image: url('../img/appointment.jpg');
   min-width: 50%;
 }
 
