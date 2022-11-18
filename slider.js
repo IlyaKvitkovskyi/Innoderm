@@ -1,56 +1,6 @@
-// $(function () {
-//   //for slick slider
-//   $('.slider').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     dots: true,
-//     centerMode: true,
-//     arrows: false,
-//     appendDots: $('.numbers'),
-//   });
-
-//   // On swipe event
-//   // $('.slider').on('swipe', function (event, slick, direction) {
-//   //   if (direction === 'left') {
-//   //     $('.slick-dots').removeClass('right-transition');
-//   //     $('.slick-dots').addClass('left-transition');
-//   //   } else {
-//   //     $('.slick-dots').removeClass('left-transition');
-//   //     $('.slick-dots').addClass('right-transition');
-//   //   }
-//   //   var newIndex = $('.slider .slick-slide.slick-current.slick-active').attr('data-slick-index');
-//   //   $('.slider .slick-dots').removeClass(function (index, css) {
-//   //     return (css.match(/\bnavDotIndex-\S+/g) || []).join(' '); // removes anything that starts with "navDotIndex-"
-//   //   });
-//   //   $('.slider .slick-dots').addClass('navDotIndex-' + newIndex);
-//   // });
-
-//   // $('.slider .slick-dots').append("<li class='animated-dot'><li>");
-//   // $('.slider .slick-dots .animated-dot').next('li').remove();
-
-//   // $('.slick-dots li button').click(function (e) {
-//   //   e.stopPropagation();
-//   // });
-
-//   // for other navigation item
-//   $('li').click(function () {
-//     $('li').removeClass('active');
-//     $(this).toggleClass('active');
-//   });
-// });
-
-// $('#slick-slider').slick({
-//   autoplay: true,
-//   dots: true,
-//   appendArrows: $('.slick-slider-nav'),
-//   appendDots: $('.slick-slider-dots'),
-//   prevArrow: "<button class='slick-prev btn btn-white rounded-circle'><i class='mdi mdi-chevron-left'></i></button>",
-//   nextArrow: "<button class='slick-next btn btn-white rounded-circle'><i class='mdi mdi-chevron-right'></i></button>",
-// });
-
 $('.slider').slick({
   // autoplay: true,
-
+  autoplaySpeed: 2000,
   dots: true,
   arrows: false,
   appendDots: $('.dots'),
@@ -58,34 +8,57 @@ $('.slider').slick({
     var thumb = $(slider.$slides[i]).data();
     return '<a>' + (i + 1) + '</a>';
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 500,
-  //     settings: {
-  //       dots: false,
-  //       arrows: false,
-  //       infinite: false,
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2,
-  //     },
-  //   },
-  // ],prom-slider
+  responsive: [
+    {
+      breakpoint: 650,
+      settings: {
+        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+      },
+    },
+  ],
 });
 
 $('.prom-slider').slick({
+  customPaging: function (slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a></a>';
+  },
   autoplay: true,
   autoplaySpeed: 2000,
   slidesToShow: 3,
   initialSlide: 0,
   infinite: true,
-  dots: false,
+  dots: true,
   arrows: false,
-  appendDots: $('.dotted'),
+  appendDots: $('.prom-dots'),
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 340,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 
 $('.about-slide').slick({
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   customPaging: function (slider, i) {
     var thumb = $(slider.$slides[i]).data();
     return '<button></button>';
@@ -96,4 +69,29 @@ $('.about-slide').slick({
   dots: true,
   arrows: false,
   appendDots: $('.about-dot'),
+});
+
+$('.articles__slider').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  customPaging: function (slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a></a>';
+  },
+  slidesToShow: 2,
+  initialSlide: 0,
+  infinite: true,
+  dots: true,
+  arrows: false,
+  appendDots: $('.articles-dot'),
+
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
