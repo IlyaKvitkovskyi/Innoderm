@@ -1,4 +1,20 @@
 /* Intro */
+.prev {
+  position: absolute;
+  left: 0;
+  margin-left: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+  cursor: pointer;
+  display: none;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -859,6 +875,10 @@ ul.socials__list {
 }
 
 @media (max-width: 640px) {
+  .next,
+  .prev {
+    display: block;
+  }
   .intro__title {
     font-size: 56px;
     line-height: 65px;
@@ -1085,20 +1105,6 @@ ul.socials__list {
 }
 
 @media (max-width: 340px) {
-}
-
-.prev {
-  position: absolute;
-  left: 0;
-  margin-left: 25px;
-  cursor: pointer;
-}
-
-.next {
-  position: absolute;
-  right: 0;
-  margin-right: 25px;
-  cursor: pointer;
 }
 
 .intro {
