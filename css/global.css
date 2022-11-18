@@ -599,3 +599,301 @@ ul.tabs-content__list {
 .tabs-content__link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1440px) {
+  .appointment__info-wrap {
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .appointment__info-wrap {
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .appointment__title {
+    font-size: 42px;
+  }
+
+  .appointment__text {
+    font-size: 16px;
+  }
+
+  .promotions__items .slick-slide {
+    margin-right: 20px;
+  }
+
+  .promotions__left {
+    margin-right: 50px;
+  }
+
+  .promotions__img {
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+
+  .appointment__content {
+    height: 500px;
+  }
+
+  .appointment__info-wrap {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+  }
+
+  .appointment__info {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .appointment__title,
+  .appointment__text {
+    text-align: center;
+  }
+
+  .appointment__inner {
+    flex-direction: column;
+  }
+
+  .promotions .container-xs {
+    flex-direction: column;
+  }
+
+  .promotions__inner {
+    margin-bottom: 30px;
+  }
+
+  .promotions__item-text {
+    font-size: 16px;
+  }
+
+  .prom-dots .slick-dots {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .prom-dots .slick-dots li {
+    height: 1px;
+    content: '';
+    border: 1px solid #ebebeb;
+    width: 300px;
+  }
+
+  .prom-dots .slick-dots li.slick-active {
+    border: 1px solid #787878;
+  }
+
+  .prom-dots {
+    margin-top: 20px;
+  }
+
+  .seo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .seo__inner p {
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotions,
+  .seo {
+    margin-top: 70px;
+  }
+
+  .promotions__title {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .promotions__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .promotions__btn {
+    min-width: 200px;
+    font-size: 16px;
+  }
+
+  .footer {
+    min-height: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .footer__socials {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .footer__info {
+    order: 3;
+  }
+
+  ul.footer__list {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer__socials-link {
+    margin-left: 0;
+  }
+
+  .footer__socials-link:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .footer__item + .footer__item {
+    margin-left: 0;
+  }
+  .footer__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .prom-dots .slick-dots li {
+    width: 140px;
+  }
+
+  .appointment__title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 35px;
+    max-width: 314px;
+  }
+
+  .appointment__text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 340px;
+  }
+
+  .select,
+  .appointment__btn {
+    width: 0;
+    min-width: 340px;
+  }
+
+  .appointment__btn {
+    margin-bottom: 64px;
+  }
+
+  .select__header,
+  .appointment__input {
+    max-width: 340px;
+  }
+
+  .appointment__form {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .tabs {
+    margin-top: 50px;
+  }
+
+  .tabs-triggers {
+    flex-direction: column;
+  }
+
+  .tabs-content__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  ul.tabs-content__list {
+    margin-right: 20px;
+  }
+
+  .tabs-content_item {
+    padding: 25px 0 15px 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .appointment {
+    margin-top: 30px;
+  }
+
+  .select__header,
+  .appointment__input {
+    max-width: 320px;
+  }
+
+  .select,
+  .appointment__btn {
+    min-width: 320px;
+  }
+
+  .appointment__content {
+    background-size: cover;
+    max-height: 400px;
+  }
+
+  .promotions,
+  .seo {
+    margin-top: 40px;
+  }
+
+  .promotions__img {
+    min-width: 279px;
+    min-height: 336px;
+  }
+
+  .promotions__items .slick-slide {
+    margin-right: 10px;
+  }
+
+  .promotions__item-text {
+    line-height: 26px;
+  }
+
+  .seo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 340px) {
+}
