@@ -289,6 +289,10 @@ ul.socials__list {
   margin-bottom: 46px;
 }
 
+.services__item-header-icon {
+  cursor: pointer;
+}
+
 .services__item-header-icon:before {
   content: '';
   position: absolute;
@@ -519,6 +523,16 @@ ul.socials__list {
 }
 
 @media (max-width: 992px) {
+  .intro__btn:hover {
+    box-shadow: none;
+    background: #28292b;
+    border: none;
+  }
+
+  .about__btn:hover {
+    box-shadow: none;
+  }
+
   .nav {
     display: none;
   }
