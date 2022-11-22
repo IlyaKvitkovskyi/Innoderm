@@ -203,14 +203,6 @@ body {
   fill: black;
 }
 
-.header.fixed .nav__list-item--first svg path {
-  fill: black;
-}
-
-.header.fixed .header__logo svg path {
-  fill: black;
-}
-
 .header__menu-content--img {
   position: absolute;
   top: 0;
@@ -782,11 +774,6 @@ ul.tabs-content__list {
     cursor: pointer;
   }
 
-  .burger.black::before,
-  .burger.black::after,
-  .burger.black span {
-    background-color: #000;
-  }
 
   .burger.active span {
     transform: scale(0);
