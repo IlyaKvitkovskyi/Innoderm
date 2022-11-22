@@ -5,3 +5,10 @@ $(function () {
     $('.page').toggleClass('blur');
   });
 });
+
+$(function () {
+  $('.burger').on('click', function (event) {
+    $('.burger, .burger-wrap, .burger-menu').toggleClass('active');
+    $('header').toggleClass('white');
+  });
+});

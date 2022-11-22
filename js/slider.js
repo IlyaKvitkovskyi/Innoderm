@@ -25,8 +25,8 @@ $('.prom-slider').slick({
     var thumb = $(slider.$slides[i]).data();
     return '<a></a>';
   },
-  // autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   slidesToShow: 3,
   initialSlide: 0,
   infinite: true,
@@ -57,8 +57,8 @@ $('.prom-slider').slick({
 });
 
 $('.about-slide').slick({
-  // autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   customPaging: function (slider, i) {
     var thumb = $(slider.$slides[i]).data();
     return '<button></button>';
@@ -72,8 +72,8 @@ $('.about-slide').slick({
 });
 
 $('.articles__slider').slick({
-  // autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   customPaging: function (slider, i) {
     var thumb = $(slider.$slides[i]).data();
     return '<a></a>';
