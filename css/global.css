@@ -100,7 +100,6 @@ body {
 
 /* Header */
 .header {
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -110,6 +109,11 @@ body {
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  background-color: grey;
+  border-bottom: none;
 }
 
 .header__inner {
@@ -196,6 +200,14 @@ body {
 }
 
 .header.white .header__logo svg path {
+  fill: black;
+}
+
+.header.fixed .nav__list-item--first svg path {
+  fill: black;
+}
+
+.header.fixed .header__logo svg path {
   fill: black;
 }
 
@@ -768,6 +780,12 @@ ul.tabs-content__list {
     right: 25px;
     transition: all 0.3s;
     cursor: pointer;
+  }
+
+  .burger.black::before,
+  .burger.black::after,
+  .burger.black span {
+    background-color: #000;
   }
 
   .burger.active span {

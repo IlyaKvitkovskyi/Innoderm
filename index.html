@@ -154,7 +154,7 @@
                 </svg>
               </li>
               <li class="nav__list-item">
-                <a class="nav__link" href="/services.html">Promotions</a>
+                <a class="nav__link" href="services.html">Promotions</a>
               </li>
               <li class="nav__list-item">
                 <a class="nav__link" href="#">About us</a>
@@ -175,7 +175,7 @@
             <a class="search" href="#">
               <img src="img/search.svg" alt="search icon" />
             </a>
-            <a class="burger" href="#">
+            <a id="burger" class="burger" href="#">
               <span></span>
             </a>
           </div>
@@ -633,9 +633,12 @@
         <div class="container">
           <h2 class="title services__title">What we specialize in</h2>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
-              Rejuvenation<span class="services__item-header-icon" data-services-button-icon></span>
+              Rejuvenation<span
+                class="services__item-header-icon"
+                data-services-button-icon
+                data-services-button
+              ></span>
             </h3>
             <div class="services__content" data-services-content>
               <img src="img/woman.jpg" alt="" />
@@ -651,11 +654,11 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
               Contour correction<span
                 class="services__item-header-icon"
                 data-services-button-icon
+                data-services-button
               ></span>
             </h3>
             <div class="services__content" data-services-content>
@@ -672,11 +675,11 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
               Removal of vessels<span
                 class="services__item-header-icon"
                 data-services-button-icon
+                data-services-button
               ></span>
             </h3>
             <div class="services__content" data-services-content>
@@ -693,11 +696,11 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
               Laser hair removal<span
                 class="services__item-header-icon"
                 data-services-button-icon
+                data-services-button
               ></span>
             </h3>
             <div class="services__content" data-services-content>
@@ -714,11 +717,11 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
               Care programs<span
                 class="services__item-header-icon"
                 data-services-button-icon
+                data-services-button
               ></span>
             </h3>
             <div class="services__content" data-services-content>
@@ -735,11 +738,11 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
               Acne treatment<span
                 class="services__item-header-icon"
                 data-services-button-icon
+                data-services-button
               ></span>
             </h3>
             <div class="services__content" data-services-content>
@@ -756,9 +759,12 @@
             </div>
           </div>
           <div class="services__item" data-services-item>
-            <button class="services__button" data-services-button></button>
             <h3 class="services__item-header">
-              Lifting<span class="services__item-header-icon" data-services-button-icon></span>
+              Lifting<span
+                class="services__item-header-icon"
+                data-services-button-icon
+                data-services-button
+              ></span>
             </h3>
             <div class="services__content" data-services-content>
               <img src="img/woman.jpg" alt="" />
@@ -1299,6 +1305,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
     <script src="js/accordion.js"></script>
+    <script src="js/stickyHeader.js"></script>
     <script src="js/select.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/slider.js"></script>
