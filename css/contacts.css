@@ -1,0 +1,178 @@
+.page {
+  overflow-y: hidden;
+}
+
+.header {
+  position: absolute;
+}
+
+.intro {
+  max-height: 100%;
+  display: flex;
+}
+
+.nav__link {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 18px;
+  color: #858585;
+}
+
+.nav__list-item--first svg path {
+  fill: #858585;
+}
+
+.contacts__background {
+  width: 45%;
+  min-height: 100%;
+}
+
+.contacts__background img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.contacts__left {
+  width: 56%;
+  background: #ededed;
+}
+
+.contacts__bottom {
+  position: relative;
+  max-width: 850px;
+}
+
+.contacts__address-block {
+  background: rgba(0, 0, 0, 0.37);
+}
+
+.contacts__items-wrap {
+  display: flex;
+}
+
+.contacts__items {
+  margin-right: 100px;
+}
+
+.contacts__address-block {
+  height: 100%;
+}
+
+.appointment__info {
+  margin-right: 0;
+}
+
+.appointment__text {
+  font-family: 'Monrsserat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #262626;
+}
+
+.appointment__btn {
+  background: #262729;
+  border: 1px solid rgba(255, 171, 135, 0.47);
+}
+
+.contacts__title {
+  font-size: 72px;
+  line-height: 96px;
+  color: #262626;
+}
+
+.contacts__dep a,
+.contacts__works-time {
+  color: #000;
+}
+
+.contacts__socials-imgs a svg path {
+  fill: #707070;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    background-color: #ededed;
+  }
+
+  .intro {
+    width: 100%;
+    max-width: 1570px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .contacts__background {
+    display: none;
+  }
+
+  .contacts__left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts__bottom {
+    max-width: 100%;
+  }
+
+  .contacts__items-wrap {
+    justify-content: space-between;
+  }
+
+  /* .contacts__items,
+  .appointment__info {
+    min-width: 50%;
+  } */
+
+  .contacts__items {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+  }
+
+  .contacts__title {
+    text-align: center;
+  }
+
+  .contacts__items-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__dep,
+  .contacts__works,
+  .contacts__socials {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__socials-imgs .contacts__socials-imgs--last {
+    margin-right: 0;
+  }
+
+  .contacts__title {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  .appointment__btn {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contacts__bottom img {
+    display: none;
+  }
+
+  .contacts__address-block {
+    position: relative;
+    background: rgba(0, 0, 0, 0.85);
+  }
+}

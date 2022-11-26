@@ -723,6 +723,9 @@ ul.socials__list {
   .prev {
     display: block;
   }
+  .dots .slick-dots {
+    display: none;
+  }
   .intro__title {
     font-size: 56px;
     line-height: 65px;

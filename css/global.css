@@ -673,7 +673,10 @@ ul.tabs-content__list {
     margin: 0 10px 0 0;
   }
 
-  .burger-menu__item.active .burger-menu__link {
+  .burger-menu__item4.active .burger-menu__link, 
+  .burger-menu__item3.active .burger-menu__link, 
+  .burger-menu__item2.active .burger-menu__link, 
+  .burger-menu__item1.active .burger-menu__link {
     color: #ffab87;
   }
 
