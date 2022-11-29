@@ -723,7 +723,7 @@ ul.socials__list {
   .prev {
     display: block;
   }
-  .dots .slick-dots {
+  .dots .slick-dots li {
     display: none;
   }
   .intro__title {
