@@ -1,0 +1,37 @@
+.categories {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.category-header {
+  position: relative;
+  background-color: #2f2f2f;
+}
+
+.categories__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.categories__item {
+  max-width: 350px;
+}
+
+.categories__item img {
+  margin-bottom: 10px;
+}
+
+.categories__item p {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .categories__items {
+    justify-content: center;
+  }
+}
