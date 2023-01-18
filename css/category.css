@@ -11,16 +11,25 @@
 .categories__items {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
   align-items: center;
 }
 
 .categories__item {
+  margin-bottom: 20px;
   max-width: 350px;
 }
 
 .categories__item img {
   margin-bottom: 10px;
+}
+
+.categories__title {
+  font-family: 'Inter';
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 48px;
 }
 
 .categories__item p {
@@ -33,5 +42,9 @@
 @media (max-width: 1024px) {
   .categories__items {
     justify-content: center;
+  }
+
+  .categories__item {
+    margin-right: 20px;
   }
 }
