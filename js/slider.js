@@ -95,3 +95,23 @@ $('.articles__slider').slick({
     },
   ],
 });
+
+$(document).ready(function () {
+  $('.customers__slider').slick({
+    slidesToShow: 2,
+    // adaptiveHeight: true,
+    // initialSlide: 0,
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  });
+});

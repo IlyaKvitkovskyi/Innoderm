@@ -2,40 +2,7 @@
   max-height: 700px;
 }
 
-ul.breadcrumbs {
-  display: flex;
-}
 
-ul.breadcrumbs li {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
-}
-
-ul.breadcrumbs li svg {
-  display: none;
-}
-
-ul.breadcrumbs li svg path {
-  fill: #fff;
-}
-
-ul.breadcrumbs li a {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-ul.breadcrumbs li:not(:last-of-type) svg {
-  display: block;
-}
-
-ul.breadcrumbs li:last-of-type a {
-  text-decoration: none;
-}
 
 .about-services .container {
   padding-left: 0;
@@ -175,105 +142,6 @@ ul.usage__list li {
   line-height: 48px;
   color: #4d4d4d;
   margin-bottom: 10px;
-}
-
-.price {
-  padding-top: 57px;
-  padding-bottom: 87px;
-  background: #fffdfa;
-}
-
-.price .title {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.price .container-xs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.content-table {
-  margin: 25px 0;
-  margin-bottom: 45px;
-  font-size: 0.9em;
-  min-width: 400px;
-  overflow: hidden;
-  background: #ffffff;
-  border: none;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 27px;
-}
-
-.content-table thead tr {
-  color: #000;
-  text-align: left;
-  font-weight: bold;
-}
-
-.content-table th,
-.content-table td {
-  padding: 35px 45px;
-  text-align: center;
-}
-
-.last-col {
-  border-right: none;
-}
-
-.content-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-  background-color: #f9f9f9;
-}
-
-.content-table .td-title {
-  text-align: left;
-}
-
-.content-table td {
-  font-family: 'Montsserat';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 43px;
-  color: #000000;
-}
-
-.content-table th {
-  font-family: 'Montsserat';
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-
-.price-btns {
-  display: flex;
-  justify-content: center;
-}
-
-.price-btn {
-  cursor: pointer;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 21px;
-  color: #3a3a3a;
-  text-transform: uppercase;
-  background: #ffffff;
-  border: 1px solid #000;
-  margin-left: 32px;
-  width: 300px;
-  height: 50px;
-  transition: all 0.3s ease;
-}
-
-.price-btn:hover {
-  background-color: #3a3a3a;
-  color: #fff;
 }
 
 .video {
